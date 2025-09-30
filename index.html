@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Zollar - Portfolio</title>
+    <!-- lucide icons script-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <!-- Bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Stylesheet link-->
@@ -11,7 +13,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f3b424;;">
         <div class="container">
             <a class="navbar-brand" href="#">Joseph Zollar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -43,7 +45,7 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Authentically intentional creative currently in my senior year pursuing Bachelor's degrees in Graphic Design and Computer Science at Drake University. I offer highly passionate and consistent work paired with vast technological and personable skills. I want to channel my creative energy in space that values good work with high morals.</p>
+        <p id="about-text">Authentically intentional creative currently in my senior year pursuing Bachelor's degrees in Graphic Design and Computer Science at Drake University. I offer highly passionate and consistent work paired with vast technological and personable skills. I want to channel my creative energy in space that values good work with high morals.</p>
     </section>
 
     <!-- Projects Section -->
@@ -55,7 +57,7 @@
             <h3>Wordle Game</h3>
             <p>Interactive word-guessing game built with HTML, CSS, and JavaScript. Features keyboard input and color-coded feedback.</p>
             <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-            <a href="#">View Project</a> | <a href="#">View Code</a>
+            <a href="Lab3/index.html">View Project</a> | <a href="https://github.com/drake-full-stack/cs195-full-stack-lab03-wordle-game-logic-javascript-lab03-wordle-javascript"> <i data-lucide="code"></i> View Code</a>
         </div>
 
         <div class="project col-sm">
@@ -63,7 +65,7 @@
             <h3>Portfolio Website</h3>
             <p>Personal portfolio showcasing web development projects and skills. Built with responsive design principles.</p>
             <p><strong>Technologies:</strong> HTML, CSS, Bootstrap</p>
-            <a href="#">View Project</a> | <a href="#">View Code</a>
+            <a href="Lab1/index.html"> View Project</a> | <a href="https://github.com/drake-full-stack/cs195-full-stack-lab02-css-wordle-layout-lab02-wordle-layout-1"> <i data-lucide="code"></i> View Code</a>
         </div>
 
         <div class="project col-sm">
@@ -79,9 +81,9 @@
     <section id="contact">
         <h2>Get In Touch</h2>
         <p>I'd love to connect! Reach out if you'd like to collaborate or just chat about web development.</p>
-        <p>Email: josephrzollar@drake.edu</p>
-        <p>GitHub: https://github.com/JoeyZollar</p>
-        <p>LinkedIn: www.linkedin.com/in/josephzollar</p>
+        <p> <i data-lucide="mail"></i> Email: josephrzollar@drake.edu</p>
+        <p> <i data-lucide="github"></i> GitHub: https://github.com/JoeyZollar</p>
+        <p> <i data-lucide="linkedin"></i> LinkedIn: www.linkedin.com/in/josephzollar</p>
     </section>
 
     <footer>
@@ -90,5 +92,7 @@
 
     <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lucide script -->
+    <script>lucide.createIcons();</script>
 </body>
 </html>

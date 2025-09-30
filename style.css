@@ -5,16 +5,24 @@
     box-sizing: border-box;
 }
 
+/* Main colors */
+:root {
+    --bs-primary: #3e242d;
+    --bs-success: #f3b424;
+    --bs-secondary: #f2eeef;
+    --bs-background: #fffcfc;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: --bs-primary;
     padding: 0vw 10vw;
+    background-color: var(--bs-background);
 }
 
 /* Navigation */
 nav {
-    background-color: #333;
     padding: 1rem 0;
 }
 
@@ -26,7 +34,6 @@ nav ul {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
@@ -39,25 +46,23 @@ nav a {
 /* Sections */
 section {
     padding: 3rem 2rem;
-    /* max-width: 800px; */
     margin: 0 auto;
 }
 
 /* Hero Section */
 #hero {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: var(--bs-secondary);
 }
 
 #hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: var(--bs-primary);
 }
 
 #hero p {
     font-size: 1.2rem;
-    color: #666;
 }
 
 /* Section Headers */
@@ -69,14 +74,15 @@ h2 {
 
 /* Projects */
 .project {
-    background-color: #f9f9f9;
+    background-color: var(--bs-secondary);
     padding: 2rem;
     margin: 1rem;
     border-radius: 8px;
+    min-height: 35vw;
+    height:max-content
 }
 
 .project h3 {
-    color: #2c3e50;
     margin-bottom: 1rem;
 }
 
@@ -85,7 +91,7 @@ h2 {
 }
 
 .project a {
-    color: #3498db;
+    color: var(--bs-primary);
     text-decoration: none;
     font-weight: bold;
 }
@@ -101,9 +107,17 @@ img {
     margin-bottom: 1rem;
 }
 
+/* Styling icons */
+i[data-lucide] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 /* Contact Section */
 #contact {
-    background-color: #f4f4f4;
+    background-color: var(--bs-secondary);
     text-align: center;
 }
 
@@ -113,8 +127,8 @@ img {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--bs-primary);
+    color: var(--bs-background);
     text-align: center;
     padding: 2rem;
 }
