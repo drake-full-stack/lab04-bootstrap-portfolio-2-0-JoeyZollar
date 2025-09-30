@@ -30,9 +30,9 @@ nav a {
     padding: 0.5rem 1rem;
 }
 
-nav a:hover {
-    background-color: #555;
-    border-radius: 4px;
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 /* Sections */
