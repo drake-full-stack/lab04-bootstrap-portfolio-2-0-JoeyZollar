@@ -28,9 +28,16 @@
     </nav>
 
     <!-- Hero/Intro Section -->
-    <section id="hero" >
-        <h1>Hi, I'm Joseph Zollar</h1>
-        <p>A web developer learning full-stack development at Drake University.</p>
+    <section id="hero" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <!-- Your content centered in 8/12 columns -->
+                    <h1>Hi, I'm Joseph Zollar</h1>
+                    <p>A web developer learning full-stack development at Drake University.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -40,28 +47,31 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section class="container-fluid" id="projects">
         <h2>My Projects</h2>
-        
-        <div class="project">
+        <div class="row">
+        <div class="project col-sm">
+            <img src="assets/WorldeScreenshot.png">
             <h3>Wordle Game</h3>
             <p>Interactive word-guessing game built with HTML, CSS, and JavaScript. Features keyboard input and color-coded feedback.</p>
             <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
             <a href="#">View Project</a> | <a href="#">View Code</a>
         </div>
 
-        <div class="project">
+        <div class="project col-sm">
+            <img src="assets/PortfolioScreenshot.png">
             <h3>Portfolio Website</h3>
             <p>Personal portfolio showcasing web development projects and skills. Built with responsive design principles.</p>
             <p><strong>Technologies:</strong> HTML, CSS, Bootstrap</p>
             <a href="#">View Project</a> | <a href="#">View Code</a>
         </div>
 
-        <div class="project">
+        <div class="project col-sm">
             <h3>Future Project</h3>
             <p>Exciting new project coming soon! Check back for updates.</p>
             <p><strong>Technologies:</strong> TBD</p>
             <a href="#">Coming Soon</a>
+        </div>
         </div>
     </section>
 
